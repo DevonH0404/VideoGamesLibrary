@@ -2,6 +2,7 @@
 $filename = __DIR__ . '/games.csv';
 $games = [];
 
+// if we have csv exists run this method (we have data to display)
 if (file_exists($filename)) {
     $file = fopen($filename, 'r');
 
@@ -26,6 +27,7 @@ if (file_exists($filename)) {
 
     <style>
         .game-image {
+            /* set width and height so all images are displayed the same */
             width: 80px;
             height: 80px;
             object-fit: cover;
@@ -59,6 +61,7 @@ if (file_exists($filename)) {
                 </thead>
 
                 <tbody>
+                    <!-- display data for each row from csv in our new array -->
                     <?php foreach ($games as $row): ?>
                         <tr>
                             <td>
