@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         <?php endif; ?>
 
-        <form action="/Projects/Video%20Games/index.php" method="post" enctype="multipart/form-data">
+        <form action="index.php" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="inventorycode" class="form-label">Inventory Code:</label>
                 <input type="text" class="form-control" id="inventorycode" name="inventorycode">
